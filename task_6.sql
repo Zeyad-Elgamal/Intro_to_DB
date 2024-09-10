@@ -1,5 +1,3 @@
--- Script to insert multiple rows into the customers table
-
 USE alx_book_store;  -- Use the alx_book_store database
 
 INSERT INTO customers (customer_id, customer_name, email, address)
