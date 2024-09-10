@@ -1,5 +1,10 @@
 -- Script to print the full description of the books table
 
-USE alx_book_store;  -- Use the alx_book_store database
-
-SHOW COLUMNS FROM books;  -- Show columns from the books table
+SELECT 
+    COLUMN_NAME, 
+    COLUMN_TYPE 
+FROM 
+    INFORMATION_SCHEMA.COLUMNS 
+WHERE 
+    TABLE_SCHEMA = 'alx_book_store' 
+    AND TABLE_NAME = 'books'; 
